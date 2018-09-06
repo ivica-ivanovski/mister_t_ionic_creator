@@ -1,0 +1,7 @@
+{
+  "name": "mister_t_ionic_creator",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
