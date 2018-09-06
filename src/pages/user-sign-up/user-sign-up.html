@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      User SignUp
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page7">
+  <h3 id="userSignUp-heading1" style="color:#000000;text-align:center;" class="main-page-title">
+    Signup to Mr. T
+  </h3>
+  <form id="userSignUp-form1">
+    <ion-item id="userSignUp-input2" class="form_label_md">
+      <ion-label floating>
+        Name and Surname
+      </ion-label>
+      <ion-input type="text" placeholder="Name and Surname" name="user_firstlast"></ion-input>
+    </ion-item>
+    <ion-item id="userSignUp-input3" class="form_label_md">
+      <ion-label floating>
+        E-mail address
+      </ion-label>
+      <ion-input type="email" placeholder="E-mail address" name="user_email"></ion-input>
+    </ion-item>
+    <ion-item id="userSignUp-input4" class="form_label_md">
+      <ion-label floating>
+        Password
+      </ion-label>
+      <ion-input type="password" placeholder="Password" name="user_password"></ion-input>
+    </ion-item>
+    <ion-item id="userSignUp-input5" class="form_label_md">
+      <ion-label floating>
+        Phone
+      </ion-label>
+      <ion-input type="tel" placeholder="Phone" name="user_phone"></ion-input>
+    </ion-item>
+    <ion-item id="userSignUp-range1" class="range-right">
+      <ion-range min="0" max="100" step="1" color="positive" value="50" name="user_salary_range">
+        <ion-label range-left>
+          Nett salary range
+        </ion-label>
+      </ion-range>
+    </ion-item>
+  </form>
+  <button id="userSignUp-button7" ion-button color="positive" block large on-click="goToApoinments()">
+    Sign up
+  </button>
+</ion-content>

@@ -1,10 +1,20 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { HomeTabPage } from '../pages/home-tab/home-tab';
+import { ChatTabPage } from '../pages/chat-tab/chat-tab';
+import { CalendarTabPage } from '../pages/calendar-tab/calendar-tab';
+import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
+import { PropertyPage } from '../pages/property/property';
+import { PropertySchedulePage } from '../pages/property-schedule/property-schedule';
+import { UserSignUpPage } from '../pages/user-sign-up/user-sign-up';
+import { ApoinmentsPage } from '../pages/apoinments/apoinments';
+import { NavigatePage } from '../pages/navigate/navigate';
+import { OldTennantNamePage } from '../pages/old-tennant-name/old-tennant-name';
+
+
+import { NgCalendarModule  } from 'ionic2-calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -12,18 +22,37 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    HomeTabPage,
+    ChatTabPage,
+    CalendarTabPage,
+    TabsControllerPage,
+    PropertyPage,
+    PropertySchedulePage,
+    UserSignUpPage,
+    ApoinmentsPage,
+    NavigatePage,
+    OldTennantNamePage
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+      NgCalendarModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    HomeTabPage,
+    ChatTabPage,
+    CalendarTabPage,
+    TabsControllerPage,
+    PropertyPage,
+    PropertySchedulePage,
+    UserSignUpPage,
+    ApoinmentsPage,
+    NavigatePage,
+    OldTennantNamePage
   ],
   providers: [
     StatusBar,

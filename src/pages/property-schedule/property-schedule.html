@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Property Schedule
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page6">
+  <calendar class="calendar"></calendar>
+  <form id="propertySchedule-form3">
+    <ion-item id="propertySchedule-input7">
+      <ion-label></ion-label>
+      <ion-input type="date" placeholder="" name="schedule_date"></ion-input>
+    </ion-item>
+  </form>
+  <ion-list id="propertySchedule-list1">
+    <ion-item color="none" on-click="goToUserSignUp()" id="propertySchedule-list-item1">
+      10:00 - 10:30
+    </ion-item>
+    <ion-item color="none" on-click="goToUserSignUp()" id="propertySchedule-list-item2">
+      10:30 - 11:00
+    </ion-item>
+    <ion-item color="none" on-click="goToUserSignUp()" id="propertySchedule-list-item3">
+      11:00 - 11:30
+    </ion-item>
+  </ion-list>
+  <button id="propertySchedule-button6" ion-button color="positive" block on-click="goToUserSignUp()">
+    Select time and Date
+  </button>
+</ion-content>
